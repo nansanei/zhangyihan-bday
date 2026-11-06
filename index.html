@@ -414,7 +414,7 @@ function buildGreetPoints() {
   var s1 = Math.min(W * 0.20, H * 0.135);
   var w1 = measureSpaced(o, CONFIG.greet, s1, '900', s1 * 0.11);
   if (w1 > maxW) s1 = s1 * (maxW / w1);
-  var s2 = s1 * 0.70;
+  var s2 = s1 * 0.88;
   var w2 = measureSpaced(o, CONFIG.name, s2, '700', s2 * 0.16);
   if (w2 > maxW) s2 = s2 * (maxW / w2);
 
@@ -428,7 +428,7 @@ function buildGreetPoints() {
   o.clearRect(0, 0, oc.width, oc.height);
   o.fillStyle = '#fff';
   drawSpaced(o, CONFIG.name, W / 2, yN, s2, '700', s2 * 0.16);
-  var b = sampleInk(o, oc.width, oc.height, 4, W < 600 ? 240 : 380);
+  var b = sampleInk(o, oc.width, oc.height, 4, W < 600 ? 620 : 900);
 
   oc.width = 1; oc.height = 1; o = null;
   // 名字那行点更小一点，避免小字号的点糊在一起
